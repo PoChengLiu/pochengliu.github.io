@@ -16,9 +16,8 @@
 }
 
 .school {
-	display: grid;
-	grid-template-columns: 1fr 280px 2fr 130px 1fr;
-	margin: 15px 0px;
+	max-width: 900px;
+	margin: auto;
 }		
 .school-icon {
 	border-radius: 0.5em;
