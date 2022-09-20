@@ -12,4 +12,20 @@
 
 .style-edu{
 	background-color: #5d1c7e;
+	padding: 0px 200px 0px 100px;
+}
+
+.school {
+	border-radius: 0.25em;
+	border: 0;
+	display: inline-block;
+	position: relative;		
+	float: right;
+	margin: 0 0 1em 1.5em;
+	top: -1em;
+}		
+.school img {
+	border-radius: 0.5em;
+	display: block;
+	height: 8em;
 }
