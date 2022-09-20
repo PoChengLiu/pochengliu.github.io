@@ -12,7 +12,7 @@
 
 .style-edu{
 	background-color: #5d1c7e;
-	padding: 0px 12em 0px 6em;
+	/* padding: 0px 12em 0px 6em; */
 }
 
 .school {
@@ -22,7 +22,7 @@
 	position: relative;		
 	float: right;
 	margin: 0 0 1em 1.5em;
-	top: -1em;
+	top: -0.5em;
 }		
 .school img {
 	border-radius: 0.5em;
