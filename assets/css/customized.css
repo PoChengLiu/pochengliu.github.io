@@ -15,7 +15,7 @@
 	/* padding: 0px 12em 0px 6em; */
 }
 
-.school {
+.align {
 	max-width: 900px;
 	margin: auto;
 }		
@@ -24,8 +24,6 @@
 	display: block;
 	height: 120px;
 }
-
-
 .img {
 	border-radius: 3em;
 	border: 0;
@@ -37,4 +35,11 @@
 	float: right;
 	margin: 0 0 1em 1.5em;
 	top: -8px;
+}
+
+.style-proj-header{
+	background-color: #5759b4;
+}
+.style-proj{
+	background-color: #5052b5;
 }
