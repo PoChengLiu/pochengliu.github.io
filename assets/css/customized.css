@@ -3,11 +3,15 @@
 .imgavatar{
 	width: 300px;
 	border-radius: 150px;
-	margin: 0px 30px;
+	margin: 50px 50px;
 }
 
 .intro-grid{
 	/* margin: 0px 0px 0px 100px; */
 	display: grid;
 	grid-template-columns: 450px 1fr;
+}
+
+.style-edu{
+	background-color: #75269c;
 }
