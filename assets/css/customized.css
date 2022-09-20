@@ -1,0 +1,13 @@
+/* modifiers by Po-Cheng Liu */
+
+.imgavatar{
+	width: 300px;
+	border-radius: 150px;
+	margin: 0px 30px;
+}
+
+.intro-grid{
+	/* margin: 0px 0px 0px 100px; */
+	display: grid;
+	grid-template-columns: 450px 1fr;
+}
