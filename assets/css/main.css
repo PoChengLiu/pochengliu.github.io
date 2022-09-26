@@ -3372,7 +3372,7 @@ input, select, textarea {
 		display: flex;
 		background-color: #5e42a6;
 		cursor: default;
-		padding: 1.75em 2em;
+		padding: 0.5em 2em;
 	}
 
 		#header > .title {
@@ -3381,6 +3381,7 @@ input, select, textarea {
 			display: block;
 			font-size: 1.25em;
 			font-weight: bold;
+			margin-top: 5px;
 		}
 
 		#header > nav {

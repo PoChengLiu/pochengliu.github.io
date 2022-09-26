@@ -1,5 +1,31 @@
 /* modifiers by Po-Cheng Liu */
 
+.avatar-icon{
+	width: 70px;
+	border-radius: 35px;
+	margin: 0px 0px;
+}
+.name{
+	display: inline-block;
+	vertical-align: top;
+	margin: 25px 10px 100px 10px;
+}
+
+.avatar-small{
+	width: 50px;
+	border-radius: 25px;
+	margin: 0px 0px;
+	vertical-align: bottom;
+}
+.name-small{
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px 10px 0px 10px;
+}
+
+
+
+
 .imgavatar{
 	width: 300px;
 	border-radius: 150px;
