@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Po-Cheng Liu's Portfolio</title>
@@ -33,9 +28,40 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Evolutionary Algorithm</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<p>In this project, I experienced the power of Evolutionary Algorithm 
+								by performing symbolic regression and evolving soft robots in simulator. 
+								C++ is used in this project considering its fast execution speed 
+								as a compiled language, CUDA is also used for parallel computing 
+								in the evaluation process.</p>
+							<h3>Part 1: Symbolic Regression</h3>
+							<p>In order to get the analytical solution to a given dataset, 
+								a function y=f(x) is represented by a binary tree with valid operations
+								 +, -, *, /, sin, cos, and a maximum depth of 8. After properly defining
+								how mutation and crossover work in the representation, those functions
+								are evolved and selected by MSE to the dataset.</p>
+							<span class="image medium"><img src="images/ea-p1.png" alt="" /></span>
+							<p>After thousands of crossovers and mutations, the analytical function can be 
+								found. In this case: 
+							<br />(Left) y = x-(cos(-0.033537-5.754166+sin(x)))*((cos(cos(x)))*((cos(-6.140075-5.866505))*(x-(cos(-9.426290))*(-1.616655+1.700702))))
+							<br />(Right) y = ((sin(-3.683910)-3.014786)*(cos(x+0.118872-4.404501))-1.759673)*(cos(x+0.243456+7.609952))
+							</p>
+							<span class="image large"><img src="images/ea-p2.png" alt="" /></span>
+							<br /><h3>Part 2: Evolving Soft Robot</h3>
+							<p>First, I built a physical simulator using the spring-damper model. 
+								I used OpenGL for graphic display. In order to make sure the physics 
+								works properly, here is a cube bouncing on the ground with no friction.</p>
+							<iframe class="youtube square" src="https://youtube.com/embed/UwocOmfGpjc"></iframe>
+							<p>After setting up the friction model, the robot is able to crawl on 
+								the ground. The robot is moving by periodically changing the length 
+								of the springs.</p>
+							<iframe class="youtube square" src="https://youtube.com/embed/sbrwVSPhhYo"></iframe>
+							<p>A robot contains 2 parts: Morphology and Controller. I tried several ways
+								 of representing them as well as the mutation and crossover methods. Then
+								evolved my robot like this:</p>
+							<span class="image small"><img src="images/ea-p3.png" alt="" /></span>
+							<p>Finally, here are some of the resulting soft robots.</p>
+							<iframe class="youtube square" src="https://youtube.com/embed/D05Jh8fPCrM"></iframe>
+							
 						</div>
 					</section>
 
