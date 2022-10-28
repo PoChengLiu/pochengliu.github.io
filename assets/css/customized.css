@@ -74,7 +74,7 @@
 .youtube.square {
 	display: block;
 	margin: 0 auto 2em auto;
-	width: 420px;
+	width: auto;
 	height: 420px;
 }
 
@@ -82,7 +82,7 @@
 .image.small {
 	display: block;
 	margin: 0 auto 2em auto;
-	width: 30%;
+	max-width: 20em;
 }
 .image.small img {
 	width: 100%;
@@ -91,7 +91,7 @@
 .image.medium {
 	display: block;
 	margin: 0 auto 2em auto;
-	width: 50%;
+	max-width: 30em;
 }
 .image.medium img {
 	width: 100%;
@@ -100,7 +100,7 @@
 .image.large {
 	display: block;
 	margin: 0 auto 2em auto;
-	width: 70%;
+	max-width: 40em;
 }
 .image.large img {
 	width: 100%;
