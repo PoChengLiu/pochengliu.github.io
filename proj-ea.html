@@ -5,7 +5,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/customized.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -33,6 +32,7 @@
 								C++ is used in this project considering its fast execution speed 
 								as a compiled language, CUDA is also used for parallel computing 
 								in the evaluation process.</p>
+								
 							<h3>Part 1: Symbolic Regression</h3>
 							<p>In order to get the analytical solution to a given dataset, 
 								a function y=f(x) is represented by a binary tree with valid operations
@@ -46,21 +46,22 @@
 							<br />(Right) y = ((sin(-3.683910)-3.014786)*(cos(x+0.118872-4.404501))-1.759673)*(cos(x+0.243456+7.609952))
 							</p>
 							<span class="image large"><img src="images/ea-p2.png" alt="" /></span>
+
 							<br /><h3>Part 2: Evolving Soft Robot</h3>
 							<p>First, I built a physical simulator using the spring-damper model. 
 								I used OpenGL for graphic display. In order to make sure the physics 
 								works properly, here is a cube bouncing on the ground with no friction.</p>
-							<iframe class="youtube square" src="https://youtube.com/embed/UwocOmfGpjc"></iframe>
+							<iframe class="youtube high" src="https://youtube.com/embed/UwocOmfGpjc"></iframe>
 							<p>After setting up the friction model, the robot is able to crawl on 
 								the ground. The robot is moving by periodically changing the length 
 								of the springs.</p>
-							<iframe class="youtube square" src="https://youtube.com/embed/sbrwVSPhhYo"></iframe>
+							<iframe class="youtube high" src="https://youtube.com/embed/sbrwVSPhhYo"></iframe>
 							<p>A robot contains 2 parts: Morphology and Controller. I tried several ways
 								 of representing them as well as the mutation and crossover methods. Then
 								evolved my robot like this:</p>
 							<span class="image small"><img src="images/ea-p3.png" alt="" /></span>
 							<p>Finally, here are some of the resulting soft robots.</p>
-							<iframe class="youtube square" src="https://youtube.com/embed/D05Jh8fPCrM"></iframe>
+							<iframe class="youtube high" src="https://youtube.com/embed/D05Jh8fPCrM"></iframe>
 							
 						</div>
 					</section>
@@ -71,7 +72,7 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Po-Cheng Liu. All rights reserved.</li><li>Web Template: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>

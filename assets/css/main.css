@@ -3908,3 +3908,129 @@ input, select, textarea {
 			}
 
 		}
+
+
+
+/* modifiers by Po-Cheng Liu */
+
+.avatar-icon{
+	width: 70px;
+	border-radius: 35px;
+	margin: 0px 0px;
+}
+.name{
+	display: inline-block;
+	vertical-align: top;
+	margin: 25px 10px 100px 10px;
+}
+
+.avatar-small{
+	width: 50px;
+	border-radius: 25px;
+	margin: 0px 0px;
+	vertical-align: bottom;
+}
+.name-small{
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px 10px 0px 10px;
+}
+
+
+.imgavatar{
+	width: 300px;
+	border-radius: 150px;
+	margin: 30px 30px;
+}
+
+.style-intro{
+	background-color: #5e42a6;
+}
+
+.style-edu{
+	background-color: #5d1c7e;
+	/* padding: 0px 12em 0px 6em; */
+}
+
+.align {
+	max-width: 900px;
+	margin: auto;
+}		
+.school-icon {
+	border-radius: 0.5em;
+	display: block;
+	height: 120px;
+}
+.img {
+	border-radius: 3em;
+	border: 0;
+	display: inline-block;
+	position: relative;
+	
+}
+.img.right {
+	float: right;
+	margin: 0 0 1em 1.5em;
+	top: -8px;
+}
+
+.style-proj-header{
+	background-color: #5759b4;
+}
+.style-proj{
+	background-color: #5052b5;
+}
+
+
+.youtube.high {
+	display: block;
+	margin: 0 auto 2em auto;
+	width: auto;
+	height: 420px;
+}
+.youtube.exhigh {
+	display: block;
+	margin: 0 auto 2em auto;
+	width: auto;
+	height: 530px;
+}
+.youtube.square {
+	display: block;
+	margin: 0 auto 2em auto;
+	width: 400px;
+	height: 400px;
+}
+.youtube.wide {
+	display: block;
+	margin: 0 auto 2em auto;
+	width: 620px;
+	height: 350px;
+}
+
+
+.image.small {
+	display: block;
+	margin: 0 auto 2em auto;
+	max-width: 20em;
+}
+.image.small img {
+	width: 100%;
+}
+
+.image.medium {
+	display: block;
+	margin: 0 auto 2em auto;
+	max-width: 30em;
+}
+.image.medium img {
+	width: 100%;
+}
+
+.image.large {
+	display: block;
+	margin: 0 auto 2em auto;
+	max-width: 40em;
+}
+.image.large img {
+	width: 100%;
+}

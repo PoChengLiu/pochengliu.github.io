@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Po-Cheng Liu's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html#proj-rl" class="title icon solid fa-arrow-left"> Back to Projects</a>
+				<nav>
+					<a href="index.html">
+						<img class="avatar-small" src="images/avatar-icon.jpg" alt="" />
+						<h3 class="name-small">Po-Cheng Liu</h3>
+					</a>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Robot Learning</h1>
+							<p>In this project, I simulated a torque-controlled multi-linked arm 
+								in Python. I tried several approaches to control the end effector 
+								position using both traditional and reinforcement learning methods. 
+								Pytorch is used for training Neural Network.</p>
+								
+							<h3>Part 1: Using Model Predictive Controller (MPC)</h3>
+							<p>The true forward dynamic model is used in this case.</p>
+							<iframe class="youtube square" src="https://youtube.com/embed/R16axSZ8VEw"></iframe>
+							
+							<br /><h3>Part 2: Using the same MPC with a trained forward dynamic model</h3>
+							<p>A Neural Network of 4 fully connected layers is used to predict the 
+								next state from current state and torque inputs. Data for training 
+								the network is collected by some random inputs before training begins.</p>
+							<iframe class="youtube square" src="https://youtube.com/embed/Ml_Dnlah7xQ"></iframe>
+							
+							<br /><h3>Part 3: Using Deep Q-Network</h3>
+							<p>A Neural Network can be used to compute a value function that satisfies 
+								its corresponding Bellman equations. Thus, the Loss should be set as 
+								follow:</p>
+							<span class="image medium"><img src="images/rl-p1.png" alt="" /></span>
+							<p>Experience replay is used to reuse the previous episodes to accelerate 
+								the training process. In order to stabilize the network in training, 
+								two networks are used. The Target network is updated less frequently. 
+								The code is like this:</p>
+							<span class="image large"><img src="images/rl-p2.png" alt="" /></span>
+							<p>This method doesn't require training data prepared before the training, 
+								it explores and creates training date for itself.</p>
+							<iframe class="youtube square" src="https://youtube.com/embed/yg6Iq2mKRY0"></iframe>
+							
+							<br /><h3>Part 4: Using Actor-Critic Methods</h3>
+							<p>This method allowed us to train a Policy network (actor) and a Q-value 
+								network (critic) simultaneously. Details of math are skip here. I used 
+								Proximal Policy Optimization in this case with the help of 
+								stable_baseline3.</p>
+							<iframe class="youtube square" src="https://youtube.com/embed/P8H6hL8NCm8"></iframe>
+							
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Po-Cheng Liu. All rights reserved.</li><li>Web Template: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

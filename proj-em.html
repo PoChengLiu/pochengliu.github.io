@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Po-Cheng Liu's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html#proj-em" class="title icon solid fa-arrow-left"> Back to Projects</a>
+				<nav>
+					<a href="index.html">
+						<img class="avatar-small" src="images/avatar-icon.jpg" alt="" />
+						<h3 class="name-small">Po-Cheng Liu</h3>
+					</a>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Embedded System</h1>
+							<p>In this project, I was using DE1-SOC which integrates an ARM-based hard 
+								processor system (HPS) with the FPGA fabric. First, I implemented a 
+								Collatz Sequence calculator using only FPGA. Then, I made a simple 
+								bullet-dodging game combining software and hardware. I learned to program 
+								on SystemVerilog and config the board using Quartus, as well as modify 
+								Linux kernel and device driver to allow memory-mapped communication.</p>
+
+							<h3>Part 1: Collatz Sequence Calculator</h3>
+							<span class="image large"><img src="images/em-p1.png" alt="" /></span>
+							<p>This is a practice of programming on FPGA and using onboard peripherals. 
+								I used switches and buttons as input. My hardware program records the 
+								number of iterations of input value reduced to 1, then showing on 7-segment 
+								displays. The first 3 digits are the input value, the last 3 digits are 
+								the output result, and both are in hex.</p>
+							<iframe class="youtube wide" src="https://youtube.com/embed/gC4UI_3huhw"></iframe>
+							
+							<br /><h3>Part 2: A Simple Video Game</h3>
+							<p>This part consists of making 640*480 VGA output on FPGA, the main game 
+								program on C, and data transfer between them. First thing is to make 
+								sure my device driver works properly: </p>
+							<iframe class="youtube wide" src="https://youtube.com/embed/v92GVHIdEv0"></iframe>
+							<p>The ball's position is controlled by software.</p>
+							<p>I wrote a script to encode small pictures into hardware, and implement 
+								sprite graphics using line buffer approach. I also made a debugger for 
+								VGA using Varilator that allows me to preview the output without compiling 
+								everything. Part of the preview frame is like this:</p>
+							<span class="image small"><img src="images/em-p2.png" alt="" /></span>
+							<p>Different color of background showing odd and even line.</p>
+							<p>My final bullet dodging game:</p>
+							<iframe class="youtube exhigh" src="https://youtube.com/embed/Hc9uuXJpLI4"></iframe>
+							<iframe class="youtube wide" src="https://youtube.com/embed/rHOHs6-u_Xc"></iframe>
+							
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Po-Cheng Liu. All rights reserved.</li><li>Web Template: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
