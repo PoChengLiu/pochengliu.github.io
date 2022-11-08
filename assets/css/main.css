@@ -3974,6 +3974,10 @@ input, select, textarea {
 	top: -8px;
 }
 
+.contact-info {
+	margin-left: 60px;
+}
+
 .style-proj-header{
 	background-color: #5759b4;
 }
