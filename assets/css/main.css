@@ -3974,8 +3974,14 @@ input, select, textarea {
 	top: -8px;
 }
 
+.contect-method {
+	display: inline-block;
+	margin-left: 20px;
+	width: 80px;
+}
+
 .contact-info {
-	margin-left: 60px;
+	margin-left: 40px;
 }
 
 .style-proj-header{
