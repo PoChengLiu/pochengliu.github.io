@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Po-Cheng Liu's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html#proj-lc" class="title icon solid fa-arrow-left"> Back to Projects</a>
+				<nav>
+					<a href="index.html">
+						<img class="avatar-small" src="images/avatar-icon.jpg" alt="" />
+						<h3 class="name-small">Po-Cheng Liu</h3>
+					</a>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Adaptive Monte Carlo Localization</h1>
+							<p>In this project, I was in a team of 3 to solve the kidnapped robot 
+								problem using LiDAR and particle filter method. The kidnapped robot 
+								problem is a situation where a robot in operation is carried to an 
+								arbitrary location. Thus, our robot needed to recover from severe 
+								localization failures. Then it overcome several unknown obstacles 
+								and went to the goal position on the map.</p>
+								
+							<p>Monte Carlo localization, also known as particle filter localization, 
+								is basically using samples and weights to represent the possibility 
+								of a robot state. A Simple pseudocode is like:</p>
+							<span class="image small"><img src="images/lc-p1.png" alt="" /></span>
+							
+							<p>A simple measurement model of LiDAR scan consists of 4 parts: a correct 
+								hit measurement with some error distribution, a short measurement 
+								because of obstacle blocking, a failed measurement with an infinite 
+								distance, and a random measurement result.</p>
+							<span class="image medium"><img src="images/lc-p2.png" alt="" /></span>
+							
+							<br />
+							<p>We scanned the environment and made the map using the same LiDAR onboard.</p>
+							<iframe class="youtube wide" src="https://youtube.com/embed/rhnLlxWVu4c"></iframe>
+							<p>The arrows on the screen shows the believed states of the robot. 
+								Let it run further to make sure our localization works well.</p>
+							<iframe class="youtube wide" src="https://youtube.com/embed/1gqIooyCouc"></iframe>
+							
+							<br />
+							<p>To deal with the kidnapped problem, the algorithm needs to add some 
+								random particles when the belief of the current position becomes too 
+								low. Also, reduce the number of particles when the belief is high 
+								enough to release computational resources. This method is called 
+								Adaptive Monte Carlo Localization.</p>
+							<iframe class="youtube wide" src="https://youtube.com/embed/1JUMCn1rvaw"></iframe>
+							<p>In this case, the robot's goal is the center of the map, and the red 
+								dots on the screen shows the LiDAR measurements.</p>
+							
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Po-Cheng Liu. All rights reserved.</li><li>Web Template: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

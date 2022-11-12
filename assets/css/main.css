@@ -4044,3 +4044,12 @@ input, select, textarea {
 .image.large img {
 	width: 100%;
 }
+
+.image.exlarge {
+	display: block;
+	margin: 0 auto 2em auto;
+	max-width: 50em;
+}
+.image.exlarge img {
+	width: 100%;
+}

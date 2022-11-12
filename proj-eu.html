@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Po-Cheng Liu's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html#proj-eu" class="title icon solid fa-arrow-left"> Back to Projects</a>
+				<nav>
+					<a href="index.html">
+						<img class="avatar-small" src="images/avatar-icon.jpg" alt="" />
+						<h3 class="name-small">Po-Cheng Liu</h3>
+					</a>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Eurobot Competition</h1>
+							<p>Eurobot is a mobile robot competition with 2 teams playing together, 
+								each with 2 robots on the table. I was the leader of our team in 2019, 
+								and we won 5th place out of 33 national teams. In this competition, 
+								we made 2 robots from scratch. We design the mechanism, manufacture it, 
+								lay out the PCB, program it, and test it. </p>
+								
+							<span class="image exlarge"><img src="images/eu-p1.png" alt="" /></span>
+							<p>Since there are multiple robots on the table simultaneously, robots need 
+								to avoid collision and scramble playing objects to get points without 
+								any human controls.</p>
+
+							<p>The simplified architecture looks like below. We use Raspberry Pi 
+								with ROS for localization, mission planning, and path planning. 
+								We program the STM32 to perform PID control on DC motors and handle 
+								other sensors' data flow. We also simulated PID parameters and 
+								performed system identification in Matlab to ensure it matches our 
+								calculation.</p>
+							<span class="image large"><img src="images/eu-p2.png" alt="" /></span>
+
+							<p>We tried several ways of localization methods, including LiDAR with EKF, 
+								UWB sensors, Camera with ArUco code. In 2019, we chose to use UWB sensors 
+								to perform the localization of our robots. We also use IMU data to 
+								improve the odometry data in slippery conditions.</p>
+
+							<p>By knowing the fixed beacon position and distances between, robot can 
+								calculate its most possible position. </p>
+							<iframe class="youtube wide" src="https://youtube.com/embed/-x_tY70d9sc"></iframe>
+							
+							<br />
+							<p>Testing the grabbing mechanism.</p>
+							<iframe class="youtube wide" src="https://youtube.com/embed/fGvC3MygXbg"></iframe>
+							
+							<br />
+							<p>Integration testing.</p>
+							<iframe class="youtube wide" src="https://youtube.com/embed/xooWRaoK8lw"></iframe>
+							
+							<br />
+							<p>Some real gameplay (Clipped from official streaming, round 3&4).</p>
+							<iframe class="youtube wide" src="https://youtube.com/embed/43tNsVzjhrY"></iframe>
+							<iframe class="youtube wide" src="https://youtube.com/embed/GUNsL334_C0"></iframe>
+							<p>Full matches can be found 
+								<a href="https://www.youtube.com/watch?v=0S3MbapjOfc&list=PLtGU7WBpJNowWOOajp5Q8oU6aUBjpa7We">
+									here</a>
+								.
+							</p>
+
+							<p>Our team and advisor at the competition venue.</p>
+							<span class="image exlarge"><img src="images/eu-p3.png" alt="" /></span>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Po-Cheng Liu. All rights reserved.</li><li>Web Template: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
